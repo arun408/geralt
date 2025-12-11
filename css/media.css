@@ -1,0 +1,167 @@
+@media (max-width: 991.98px) { /* Applies to screens < 992px (Medium and below) */
+    .content-box h1 {
+        font-size: 50px; /* Reduced from 60px */
+    }
+    
+    .content-box p {
+        font-size: 16px; /* Slightly reduced from 17px */
+    }
+}
+
+@media (max-width: 767.98px) { /* Applies to screens < 768px (Small and below) */
+    .content-box h1 {
+        font-size: 40px; /* Reduced from 50px */
+    }
+    
+    .content-box p {
+        font-size: 15px; /* Reduced from 16px */
+    }
+    
+    /* Ensure buttons wrap to keep content within bounds */
+    .btn-group {
+        width: 80%; /* Allow buttons to take more width */
+    }
+}
+
+@media (max-width: 575.98px) { /* Applies to screens < 576px (Extra Small) */
+    .content-box h1 {
+        font-size: 30px; /* Heavily reduced for mobile */
+        line-height: 1.3;
+    }
+    
+    .content-box p {
+        font-size: 14px; /* Final size for mobile text */
+    }
+
+    /* Force Button Stacking for mobile visibility */
+    .btn-group {
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 250px !important; 
+        height: auto !important; 
+        margin: 10px auto !important; 
+    }
+
+    .btn-group1, .btn-group2 {
+        width: 100% !important;
+        margin: 5px 0 !important;
+    }
+}
+
+@media (max-width:991.98px) {
+    .collapse-box {
+        background-color: #102d23;
+        z-index: 9999;
+        position: relative;
+    }
+
+    .navbar {
+    position: relative;
+    z-index: 10000;
+  }
+}
+
+@media (max-width: 767.98px) {
+    .section-title {
+        font-size: 36px; /* Reduced for tablet/mobile */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pay-box h3 {
+        font-size: 40px; /* Reduced for tablet/mobile */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .discover-heading {
+        font-size: 40px; 
+    }
+}
+
+@media (max-width: 400px) {
+  .display-percentage {
+    font-size: clamp(30px, 15vw, 80px);
+  }
+  .caption-text {
+    font-size: clamp(12px, 3vw, 16px);
+  }
+}
+
+@media (max-width: 576px) {
+
+    .circle-wrapper {
+    min-height: 150px;
+  }
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+  }
+  .profile-pic.top {
+    top: -20px;
+  }
+  .profile-pic.left {
+    left: -20px;
+  }
+  .profile-pic.right {
+    right: -20px;
+  }
+}
+
+/* Responsive adjustments for profile pictures */
+@media (max-width: 991px) { /* Adjust for smaller screens like tablets */
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+  .profile-pic.top {
+    top: -25px;
+  }
+  .profile-pic.left {
+    left: -25px;
+  }
+  .profile-pic.right {
+    right: -25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .circle-wrapper {
+    margin-top: 30px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .circle-wrapper {
+    margin-top: 40px; 
+  }
+}
+
+@media (max-width:768px) {
+  .testimonial-card {
+    width: 250px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .col-lg-5col {
+      width: 20%;   /* 100 / 5 = 20% */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .row-wrapper {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 180px;  /* smaller mobile screens */
+  }
+}
+
+.btn-submit { width: 60%; }
+@media (min-width:576px){ .btn-submit{ width:55%; } }
+@media (min-width:768px){ .btn-submit{ width:45%; } }
+@media (min-width:992px){ .btn-submit{ width:40%; } }
